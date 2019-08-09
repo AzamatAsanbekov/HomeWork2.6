@@ -11,9 +11,16 @@ public  class Car implements Comparable<Car> {
         this.setVolume(volume);
     }
     @Override
-    public int compareTo(Car o) {
-        return this.getYear() - o.getYear();
+    public int compareTo(Car c){
+        if(this.year<c.getYear()){
+            return 1;
+        }else if (this.year>c.getYear()){
+            return -1;
+        }else{
+            return 0;
+        }
     }
+
     public String getModel() {
         return model;
     }

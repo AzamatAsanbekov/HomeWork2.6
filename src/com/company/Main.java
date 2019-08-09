@@ -12,7 +12,6 @@ import java.util.List;
         public static void main(String[] args) {
 
                 ArrayList<Car> cars = new ArrayList<>(5);
-                Collections collections;
 
                 Car Ferrari = new Car("Ferrari", 2003, 4);
                 Car Mercedes = new Car("Mercedes", 2002, 5);
@@ -41,8 +40,9 @@ import java.util.List;
                 System.out.println(cars);
                 Collections.sort(cars);
                 System.out.println("После сортировки");
+               Collections.sort(cars);
                 System.out.println(cars);
-                Collections.sort(cars);
+
                 try {
                     printListForEachloop(cars);
                 } catch (Exception e) {
